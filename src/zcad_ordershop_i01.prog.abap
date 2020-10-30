@@ -24,10 +24,12 @@ MODULE user_command_9000 INPUT.
 
   CASE okcode.
     WHEN 'BUTTON_OK'.
+      check ls_order-totalprice is not INITIAL.
       IF gv_error IS INITIAL.
         PERFORM grabar_order.
       ELSE.
-        MESSAGE e001(ls) WITH TEXT-002.
+        MESSAGE i001(ls) WITH TEXT-002.
+        clear gv_error.
       ENDIF.
 
     WHEN 'BUTTON_CANC'.
@@ -44,6 +46,7 @@ MODULE calcular_pvp INPUT.
 
 
   DATA: lv_importe TYPE ze_totalp.
+
 
   CLEAR: ls_order-totalprice,
         gv_error.

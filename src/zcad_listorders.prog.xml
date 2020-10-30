@@ -3,7 +3,7 @@
  <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
   <asx:values>
    <PROGDIR>
-    <NAME>ZCAD_MANTEINANCE_TABLES101</NAME>
+    <NAME>ZCAD_LISTORDERS</NAME>
     <SUBC>1</SUBC>
     <RLOAD>E</RLOAD>
     <FIXPT>X</FIXPT>
@@ -13,24 +13,18 @@
     <item>
      <ID>I</ID>
      <KEY>001</KEY>
-     <ENTRY>Mantenimiento Datos Ferretería</ENTRY>
-     <LENGTH>40</LENGTH>
+     <ENTRY>Pedidos Ferreteria</ENTRY>
+     <LENGTH>18</LENGTH>
     </item>
     <item>
      <ID>R</ID>
-     <ENTRY>Mantenimiento Datos Ferreteria</ENTRY>
-     <LENGTH>30</LENGTH>
+     <ENTRY>Pedidos Ferreteria</ENTRY>
+     <LENGTH>18</LENGTH>
     </item>
     <item>
      <ID>S</ID>
-     <KEY>R_OP1</KEY>
-     <ENTRY>Productos</ENTRY>
-     <LENGTH>25</LENGTH>
-    </item>
-    <item>
-     <ID>S</ID>
-     <KEY>R_OP3</KEY>
-     <ENTRY>Cupones Dto.</ENTRY>
+     <KEY>S_ID</KEY>
+     <ENTRY>Pedidos</ENTRY>
      <LENGTH>22</LENGTH>
     </item>
    </TPOOL>

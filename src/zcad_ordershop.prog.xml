@@ -1840,6 +1840,18 @@
      <LENGTH>66</LENGTH>
     </item>
     <item>
+     <ID>I</ID>
+     <KEY>005</KEY>
+     <ENTRY>No se dispone de stock suficiente para el producto</ENTRY>
+     <LENGTH>100</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>006</KEY>
+     <ENTRY>Error al actualizar la información</ENTRY>
+     <LENGTH>34</LENGTH>
+    </item>
+    <item>
      <ID>R</ID>
      <ENTRY>Creacion Pedido Ferreteria</ENTRY>
      <LENGTH>26</LENGTH>
