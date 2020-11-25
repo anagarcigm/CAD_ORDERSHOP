@@ -376,7 +376,7 @@
        <CONT_NAME>TCTRL_ZCAD_ORDERSHOP</CONT_NAME>
        <TYPE>TEXT</TYPE>
        <NAME>*ZCAD_ORDERSHOP-ID</NAME>
-       <TEXT>Sales_Document__________________________</TEXT>
+       <TEXT>Sales_doc.______________________________</TEXT>
        <LINE>001</LINE>
        <COLUMN>001</COLUMN>
        <LENGTH>040</LENGTH>
@@ -537,7 +537,6 @@
        <FROM_DICT>X</FROM_DICT>
        <MODIFIC>X</MODIFIC>
        <CONV_EXIT>ALPHA</CONV_EXIT>
-       <PARAM_ID>AUN</PARAM_ID>
        <OUTPUT_FLD>X</OUTPUT_FLD>
        <REQU_ENTRY>N</REQU_ENTRY>
       </RPY_DYFATC>
@@ -591,7 +590,6 @@
        <FORMAT>CUKY</FORMAT>
        <FROM_DICT>X</FROM_DICT>
        <MODIFIC>X</MODIFIC>
-       <PARAM_ID>FWS</PARAM_ID>
        <INPUT_FLD>X</INPUT_FLD>
        <OUTPUT_FLD>X</OUTPUT_FLD>
       </RPY_DYFATC>
