@@ -98,12 +98,12 @@ ENDMODULE.
 MODULE determinar_ttal INPUT.
   DATA: ls_cupon TYPE zcad_cupon.
   CHECK sy-ucomm NE 'BUTTON_CANC'.
-  IF gv_code = space.
+  IF ls_order-cupon = space.
     ls_order-discountedprice =  ls_order-totalprice.
   ELSE.
     SELECT SINGLE * INTO ls_cupon
       FROM zcad_cupon
-      WHERE code = gv_code.
+      WHERE code = ls_order-cupon.
     IF sy-subrc EQ 0.
       ls_order-discountedprice =  ls_order-totalprice -
         ( ls_order-totalprice * ls_cupon-percentaje ).

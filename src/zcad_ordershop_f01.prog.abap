@@ -13,6 +13,7 @@ FORM calcular_imp  USING    VALUE(pe_product) TYPE ze_idproduct
         lv_return LIKE sy-subrc,
         lv_save   TYPE sy-ucomm.
 
+
   CLEAR lv_return.
 
   CALL FUNCTION 'ZCAD_CALCULAR_PVP'
@@ -69,8 +70,8 @@ ENDFORM.
 *&---------------------------------------------------------------------*
 FORM limpiar .
   CLEAR:ls_order,
-          gv_error,
-          gv_code.
+          gv_error.
+
 ENDFORM.
 *&---------------------------------------------------------------------*
 *& Form UPDATE_STOCK
@@ -127,6 +128,7 @@ ENDFORM.
 FORM update_tab_stock  USING    VALUE(p_producto)
                                 pe_piezas TYPE ze_stock
                                 VALUE(p_save).
+
   DATA: lv_retorno LIKE sy-subrc.
   CALL FUNCTION 'ZCAD_CALCULAR_PVP'
     EXPORTING

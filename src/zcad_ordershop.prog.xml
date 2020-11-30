@@ -129,11 +129,11 @@
        <CONT_NAME>SCREEN</CONT_NAME>
        <TYPE>TEXT</TYPE>
        <NAME>ZCAD_ORDERSHOP-WASHERS</NAME>
-       <TEXT>ARANDELAS_________</TEXT>
+       <TEXT>ARANDELAS________</TEXT>
        <LINE>007</LINE>
        <COLUMN>015</COLUMN>
-       <LENGTH>018</LENGTH>
-       <VISLENGTH>018</VISLENGTH>
+       <LENGTH>017</LENGTH>
+       <VISLENGTH>017</VISLENGTH>
        <HEIGHT>001</HEIGHT>
        <FORMAT>CHAR</FORMAT>
        <FROM_DICT>X</FROM_DICT>
@@ -162,7 +162,7 @@
        <TYPE>TEXT</TYPE>
        <NAME>ZCAD_ORDERSHOP-TOTALPRICE</NAME>
        <TEXT>Pvp_Total___________</TEXT>
-       <LINE>010</LINE>
+       <LINE>009</LINE>
        <COLUMN>015</COLUMN>
        <LENGTH>020</LENGTH>
        <VISLENGTH>020</VISLENGTH>
@@ -179,7 +179,7 @@
        <TYPE>TEMPLATE</TYPE>
        <NAME>LS_ORDER-TOTALPRICE</NAME>
        <TEXT>____________________</TEXT>
-       <LINE>010</LINE>
+       <LINE>009</LINE>
        <COLUMN>036</COLUMN>
        <LENGTH>020</LENGTH>
        <VISLENGTH>020</VISLENGTH>
@@ -194,24 +194,21 @@
        <CONT_TYPE>SCREEN</CONT_TYPE>
        <CONT_NAME>SCREEN</CONT_NAME>
        <TYPE>TEXT</TYPE>
-       <NAME>ZCAD_CUPON-CODE</NAME>
-       <TEXT>Code_Cupon__________</TEXT>
+       <NAME>%#AUTOTEXT001</NAME>
+       <TEXT>Código_Cupón________</TEXT>
        <LINE>012</LINE>
        <COLUMN>015</COLUMN>
        <LENGTH>020</LENGTH>
        <VISLENGTH>020</VISLENGTH>
        <HEIGHT>001</HEIGHT>
        <FORMAT>CHAR</FORMAT>
-       <FROM_DICT>X</FROM_DICT>
-       <MODIFIC>2</MODIFIC>
        <REQU_ENTRY>N</REQU_ENTRY>
-       <LABELLEFT>X</LABELLEFT>
       </RPY_DYFATC>
       <RPY_DYFATC>
        <CONT_TYPE>SCREEN</CONT_TYPE>
        <CONT_NAME>SCREEN</CONT_NAME>
        <TYPE>TEMPLATE</TYPE>
-       <NAME>GV_CODE</NAME>
+       <NAME>LS_ORDER-CUPON</NAME>
        <TEXT>__________</TEXT>
        <LINE>012</LINE>
        <COLUMN>036</COLUMN>
@@ -372,7 +369,7 @@
        <LINE>  ENDCHAIN.</LINE>
       </RPY_DYFLOW>
       <RPY_DYFLOW>
-       <LINE>  FIELD gv_code MODULE determinar_ttal.</LINE>
+       <LINE>  FIELD ls_order-cupon MODULE determinar_ttal.</LINE>
       </RPY_DYFLOW>
       <RPY_DYFLOW>
        <LINE>  MODULE user_command_9000.</LINE>
