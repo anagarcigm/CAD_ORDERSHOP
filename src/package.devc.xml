@@ -4,6 +4,8 @@
   <asx:values>
    <DEVC>
     <CTEXT>Modelo 101 cad</CTEXT>
+    <COMP_POSID>BC-DWB-DIC</COMP_POSID>
+    <COMPONENT>HLB0009078</COMPONENT>
    </DEVC>
   </asx:values>
  </asx:abap>
