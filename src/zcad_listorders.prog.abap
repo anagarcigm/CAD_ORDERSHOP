@@ -15,7 +15,8 @@ SELECTION-SCREEN END OF BLOCK b1.
 
 START-OF-SELECTION.
 
-  SELECT * INTO TABLE @t_data
+  SELECT *
+    INTO TABLE @t_data
     FROM zcad_ordershop
   WHERE id IN @s_id.
 
@@ -40,20 +41,17 @@ END-OF-SELECTION.
         inconsistent_interface = 1
         program_error          = 2
         OTHERS                 = 3.
-    IF sy-subrc <> 0.
-* Implement suitable error handling here
+    IF sy-subrc EQ 0.
+      CALL FUNCTION 'REUSE_ALV_GRID_DISPLAY'
+        EXPORTING
+          it_fieldcat   = t_catalog
+        TABLES
+          t_outtab      = t_data[]
+        EXCEPTIONS
+          program_error = 1
+          OTHERS        = 2.
+
     ENDIF.
-
-
-    CALL FUNCTION 'REUSE_ALV_GRID_DISPLAY'
-      EXPORTING
-        it_fieldcat   = t_catalog
-      TABLES
-        t_outtab      = t_data[]
-      EXCEPTIONS
-        program_error = 1
-        OTHERS        = 2.
-
 
 
   ENDIF.
