@@ -134,7 +134,7 @@ ENDFORM.
 *&      --> P_
 *&---------------------------------------------------------------------*
 FORM update_tab_stock  USING    VALUE(p_producto)
-                                pe_piezas TYPE ze_stock
+                                pe_piezas TYPE int1
                                 VALUE(p_save).
 
   DATA: lv_retorno LIKE sy-subrc.
