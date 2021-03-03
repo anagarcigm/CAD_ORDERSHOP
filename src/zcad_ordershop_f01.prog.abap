@@ -46,13 +46,11 @@ ENDFORM.
 *&---------------------------------------------------------------------*
 FORM grabar_order .
 
-  DATA: lx_error TYPE REF TO cx_root.
 
-  TRY.
-      ls_order-order_uuid = cl_system_uuid=>create_uuid_x16_static( ).
-    CATCH cx_uuid_error INTO lx_error.
-      ASSERT lx_error IS INITIAL.  " fails always here
-  ENDTRY.
+
+
+  ls_order-order_uuid = cl_system_uuid=>create_uuid_x16_static( ).
+
 
   PERFORM update_stock.
   CHECK gv_error IS INITIAL.
