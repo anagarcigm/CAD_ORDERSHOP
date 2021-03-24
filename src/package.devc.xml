@@ -3,7 +3,7 @@
  <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
   <asx:values>
    <DEVC>
-    <CTEXT>Modelo 101 cad</CTEXT>
+    <CTEXT>bestPractice</CTEXT>
     <COMP_POSID>BC-DWB-DIC</COMP_POSID>
     <COMPONENT>HLB0009078</COMPONENT>
    </DEVC>
