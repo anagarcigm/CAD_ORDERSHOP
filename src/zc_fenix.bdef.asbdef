@@ -1,8 +1,0 @@
-projection;
-
-define behavior for ZC_FENIX alias FENIX
-{
-  use create;
-  use update;
-  use delete;
-}
